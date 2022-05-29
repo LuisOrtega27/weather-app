@@ -8,11 +8,7 @@ const resultsArea = document.querySelector('.results-area')
 
 
 const createWeatherCard= (weatherInfo)=>{
-
-
-    console.log(weatherInfo.weather)
     
-    console.log(weatherInfo)
     
     const date = new Date().toLocaleDateString("es-VE");
 
