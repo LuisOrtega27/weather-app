@@ -88,11 +88,9 @@ const createWeatherCard= (weatherInfo)=>{
 const fetcher = async(url)=>{
 
     // console.log(url)
-    let interval 
 
     try{
 
-        clearInterval(interval)
 
         return await fetch(url)
         .then(res => res.json())
@@ -103,7 +101,6 @@ const fetcher = async(url)=>{
         
         console.log('Shitty internet connection, sorry')
 
-        interval = setInterval(fetcher(url), 30000)
         
         return false
     }
