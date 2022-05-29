@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #192a56;
+}
+
+header{
+    padding: 2%;
+    text-align: center;
+    background-color: #273c75;
+}
+
+.search-area{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.input-group{
+    display: inline-block;
+    border: solid 2px #28e;
+    border-radius: 5px;
+}
+.input-group>div{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+#search-cityName{
+    height: 100%;
+    padding: 10px;
+    width: 300px; 
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 1.1em;
+    height: 100%;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #28e;
+    border: none;
+    cursor: pointer;
+    transition: font-size 0.2s ease;
+}
+.btn:hover{
+    font-size: 1em;
+}
+.btn:active{
+    background-color: #28e8;
+}
+
+.results-area{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 500px;
+    max-width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.weather-card{
+    display: grid;
+    /* height: fit-content; */
+    height: 350px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #fff4;
+    overflow: hidden;
+}
+.city-name{
+    padding-top: 10px;
+    text-align: center;
+}
+.pri-info{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    padding: 10px;
+}
+.temperature{
+    font-size: 3em;
+}
+.temperature,.weather-type{
+    margin-bottom: 10px;
+}
+
+
+.img-info{
+    display: flex;
+}
+.date{
+    margin-top: 20px;
+    font-size: 0.8em;
+    padding: 5px;
+}
+.min-max-area{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+
+
+.sec-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 0.8em;
+}
+.sec-info>div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #0002;
+}
+.sec-info>div>span{
+    margin: auto;
+}
