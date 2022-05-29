@@ -47,7 +47,7 @@ const createWeatherCard= (weatherInfo)=>{
             </div>
             
             <picture class="img-info">
-                <img src="http://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}.png" alt="${weatherInfo.weather.description}">
+                <img src="https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}.png" alt="${weatherInfo.weather.description}">
             </picture>
             
             <div class="min-max-area">
